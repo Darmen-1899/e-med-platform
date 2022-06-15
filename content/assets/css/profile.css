@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+body {
+    margin: 0;
+    width: 100%;
+
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.dark-grey {
+    color: #333;
+    font-weight: 500;
+}
+
+.white {
+    color: #fff;
+    font-weight: 500;
+}
+
+
+p,h1,h2,h3,h4,h5,li,ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all .15s .05s;
+}
+
+a:hover {
+    color: #333;
+}
+
+
+
+.active {
+    border-bottom: 2px solid #fff;
+}
+
+
+.header {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    overflow-x: hidden;
+    z-index: 2;
+
+    background-color: #2d7efc;
+}
+
+.main {
+    min-height: 100vh;
+    max-height: max-content;
+}
+
+.my-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    height: max-content;
+
+    width: 90%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.my-container--column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.logo img {
+    width: 65px;
+    height: 65px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (min-width: 580px) {
+    .nav {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.nav__link {
+    transition: all .15s .05s;
+    border-bottom: 2px solid #33333300;
+    margin-right: 15px;
+}
+
+.nav__link--logo {
+    margin-right: 20px;
+}
+
+@media (min-width: 750px) {
+    .nav__link--logo {
+        margin-right: 50px;
+    }
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.nav__link--d:hover {
+    border-bottom: 2px solid #333;
+}
+
+.nav__link--d:hover a {
+    color: #333;
+}
+
+.nav__link a {
+    font-size: 14px;
+}
+
+@media (min-width: 355px) {
+    .nav__link a {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 380px) {
+    .nav__link a {
+        font-size: 18px;
+    }
+}
+
+.sel-lang {
+
+    border: none;
+    outline: none;
+
+    padding: 10px 0;
+
+    color: #000;
+    font-size: 14px;
+    background-color: transparent;
+
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+
+}
+
+@media (min-width: 355px) {
+    .sel-lang {
+
+        font-size: 16px;
+    
+    }
+}
+
+@media (min-width: 380px) {
+    .sel-lang {
+
+        font-size: 18px;
+    
+    }
+}
+
+
+
+.section {
+    height: max-content;
+    box-sizing:  border-box;
+
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.user-container {
+    min-height: 500px;
+    max-height: max-content;
+    width: 90%;
+
+    display: grid;
+    grid-template: 1fr max-content / 1fr;
+    grid-gap: 15px;
+}
+
+@media (min-width: 1015px) {
+    .user-container {
+        grid-template: 1fr / 2fr  5fr;
+    }
+}
+
+.wrapper--user {
+    border-right: 0 solid #000;
+}
+
+@media (min-width: 1015px) {
+    .wrapper--user {
+        border-right: 3px solid #000;
+    }
+}
+
+.user {
+    height: 100%;
+    
+}
+
+.user__desc {
+    max-width: 90%;
+
+    
+
+    margin-top: 30px;
+}
+
+.user__text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+
+    margin-bottom: 10px;
+    padding-top: 10px;
+    
+    border-top: 1px solid #000;
+}
+
+@media (min-width: 1180px) {
+    .user__text {
+        font-size: 21px;
+    }
+}
+
+.user__text:last-child {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.ava img {
+    width: 150px;
+    height: 150px;
+}
+
+.wrapper--med {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 0;
+
+
+    display: grid;
+    grid-template: 90px 1fr / 1fr;
+}
+
+@media (min-width: 1015px) {
+    .wrapper--med {
+        padding: 20px 0;
+        padding-left: 2vw;
+    }
+}
+
+.med-title {
+    box-sizing: border-box;
+    padding-left: 0;
+    justify-self: center;
+}
+
+@media (min-width: 1015px) {
+    .med-title {
+        padding-left: 10px;
+        justify-self: start;
+    }
+}
+
+
+
+.medicine {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media (min-width: 1015px) {
+    .medicine {
+        justify-content: start;
+    }
+}
+
+.medicine__item {
+    background-color: #2d7efc80;
+
+    border-radius: 10px;
+
+    margin-bottom: 10px;
+    margin-left: 0;
+
+    padding: 20px 20px;
+
+    min-height: 280px;
+    height: max-content;
+    width: 90%;
+}
+
+@media (min-width: 690px) {
+    .medicine__item {
+        min-height: 310px;
+        width: 300px;
+        margin-left: 10px;
+    }
+}
+
+
+@media (min-width: 1180px) {
+    .medicine__item {
+        width: 350px;
+    }
+}
+
+@media (min-width: 1365px) {
+    .medicine__item {
+        width: 270px;
+    }
+}
+
+@media (min-width: 1565px) {
+    .medicine__item {
+        width: 310px;
+    }
+}
+
+.medicine__title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+
+    margin-bottom: 20px;
+}
+
+.medicine__text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+
+    margin-bottom: 20px;
+}
+
+.medicine__text:last-child {
+    margin-bottom: 0;
+
+}
+
+.medicine__text--doc {
+    font-size: 16px;
+}
+
+@media (min-width: 1300px) {
+    .medicine__text--doc {
+        font-size: 21px;
+    }
+}
+
+.form-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    padding: 70px 0;
+}
+
+.form-label {
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 430px) {
+    .form-label {
+        font-size: 32px;
+    } 
+}
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.form {
+    width: 100%;
+}
+
+.label_for_input_file{
+    cursor: pointer;
+     padding: 7px 0;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+
+    font-size: 18px;
+
+    padding-left: 10px;
+}
+
+@media (min-width: 1015px) {
+    .form-control {
+        padding-left: 30px;
+        font-size: 21px;
+        width: 50%;
+    }
+}
+
+.for_private_key{
+        padding-left: 30px;
+        font-size: 21px;
+        width: 20px;
+}
+
+.btn {
+    display: block;
+    background-color: #2d7efc;
+
+    margin: auto;
+
+    font-size: 16px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (min-width: 430px) {
+    .btn {
+        font-size: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
+
+.section--patients {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.patient-heading {
+    width: 100%;
+    height: 35px;
+
+    display: grid;
+    grid-template: 1fr / 60px 90px 1fr;
+}
+
+@media (min-width: 610px) {
+    .patient-heading {
+        height: 50px;
+    }
+}
+
+.patient-heading__text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+
+.patients-title {
+    width: 100%;
+
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 610px) {
+    .patients-title {
+        margin-bottom: 50px;
+        font-size: 36px;
+    }
+}
+
+
+.patient {
+    width: 100%;
+    min-height: 110px;
+    max-height: max-content;
+
+    border-bottom: 2px solid #000;
+
+    display: grid;
+    grid-template: 1fr / 60px 90px 1fr;
+}
+
+@media (min-width: 355px) {
+    .patient-heading {
+        grid-template: 1fr / 90px 120px 1fr;
+    }
+    .patient {
+        grid-template: 1fr / 90px 120px 1fr;
+    }
+}
+
+
+@media (min-width: 610px) {
+    .patient-heading {
+        grid-template: 1fr / 120px 170px 1fr;
+    }
+    .patient {
+        grid-template: 1fr / 120px 170px 1fr;
+    }
+}
+
+@media (min-width: 900px) {
+    .patient-heading {
+        grid-template: 1fr / 150px 250px 1fr;
+    }
+    .patient {
+        grid-template: 1fr / 150px 250px 1fr;
+    }
+}
+
+.patient:first-child {
+    border-top: 2px solid #000;
+}
+
+.patient__ava {
+    align-self: center;
+}
+
+.patient__ava img {
+    width: 50px;
+    height: 50px;
+}
+
+.patient__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+
+    margin-bottom: 0;
+
+    align-self: center;
+}
+
+.patient__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+
+    align-self: center;
+}
+
+@media (min-width: 355px) {
+    .patient__ava img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .patient__title {
+        font-size: 18px;
+    }
+    
+    .patient__text { 
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 610px) {
+    .patient-heading__text {
+        font-size: 24px;
+    }
+
+    .patient__ava img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .patient__title {
+        font-size: 21px;
+    }
+    
+    .patient__text { 
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: 80px;
+    margin-top: 5%;
+    background-color: #2d7efc;
+}
+
+.active {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.btn-lg {
+    padding: 7px 0;
+    font-size: 16px;
+    float: bottom;
+
+    width: 100%;
+    text-align: center;
+}
+
+.nav--row {
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.nav--rev {
+    flex-direction: row;
+}
+
+@media (max-width: 580px) {
+    .nav--rev {
+        flex-direction: column-reverse;
+    }
+}
+
+.medicine__item {
+    position: relative;
+}
+
+.btn--b {
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+
+    width: 100%;
+}
+
+.btn--l {
+    width: 50%;
+}

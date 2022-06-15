@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyGlobalUndefinedInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnreachableCodeInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="config.BOT_TOKEN" />
+          <option value="myfirst.myfirst.urls.generator" />
+          <option value="django.forms.forms.*" />
+          <option value="vvb.projects.forms.forms" />
+          <option value="AristotleBot.management.commands.bot.db_table_val" />
+          <option value="AristotleBot.management.commands.bot.biblioteka" />
+          <option value="aif.pandas_datareader" />
+          <option value="main.BG_COLOR" />
+          <option value="main.STATIC_IMAGE_MODE" />
+          <option value="investpy" />
+          <option value="investment.main.matplotlib" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

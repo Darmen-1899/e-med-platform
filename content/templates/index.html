@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+    <section class="section section--welc" style="background-image: url({% static "img/background.png" %})">
+
+                <div class="container container--sec">
+
+                    <article class="article article--welc">
+                        <h1 class="title">{% trans 'Electronic recipe' %}</h1>
+                        <p class="text">{% trans 'An electronic prescription is a legally significant, modern analogue of a conventional paper prescription. Now all assignments are transferred to a clear format, they cannot be forgotten or lost.' %}</p>
+                    </article>
+
+                    <img src="{% static "img/doctor.png" %}" alt="Иллюстрация" class="welc-img">
+
+                </div>
+            </section>
+
+{% endblock %}
